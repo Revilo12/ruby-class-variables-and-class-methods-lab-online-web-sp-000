@@ -10,14 +10,15 @@ class Song
     @artist = artist
     @genre = genre
     @@count += 1
-    add_unless(@@genres, genre)
-    add_unless(@@artists, artist)
-
+    # add_unless(@@genres, genre)
+    @@genres << genre
+    # add_unless(@@artists, artist)
+    @@artists << artist
   end
 
-  def add_unless(class_variable, instance)
-    class_variable << instance unless class_variable.include?(instance)
-  end
+  # def add_unless(class_variable, instance)
+  #   class_variable << instance unless class_variable.include?(instance)
+  # end
 
   def count
     @@count
