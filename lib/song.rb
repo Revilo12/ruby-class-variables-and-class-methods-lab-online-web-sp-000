@@ -16,10 +16,6 @@ class Song
     @@artists << artist
   end
 
-  # def add_unless(class_variable, instance)
-  #   class_variable << instance unless class_variable.include?(instance)
-  # end
-
   def count
     @@count
   end
@@ -27,5 +23,11 @@ class Song
   def genres
     @@genres
   end
+
+  # def add_unless(class_variable, instance)
+  #   class_variable << instance unless class_variable.include?(instance)
+  # end
+
+
 
 end
